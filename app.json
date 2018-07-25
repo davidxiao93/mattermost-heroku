@@ -1,7 +1,7 @@
 {
     "name": "Mattermost Heroku",
     "description": "Deploy Mattermost to Heroku",
-    "repository": "https://github.com/mozilla/mattermost-heroku",
+    "repository": "https://github.com/davidxiao93/mattermost-heroku",
     "keywords": [
         "mattermost",
         "nginx"
@@ -12,12 +12,12 @@
             "url": "https://github.com/cadecairos/nginx-buildpack.git#v2.0.0"
         },
         {
-            "url": "http://github.com/mozilla/mattermost-heroku.git#v2.2.0"
+            "url": "http://github.com/davidxiao93/mattermost-heroku.git#v2.2.0"
         }
     ],
     "env": {
         "MATTERMOST_VERSION": {
-            "value": "4.2.0",
+            "value": "5.1.0",
             "description": "Mattermost version to install, semver format"
         },
         "MATTERMOST_TYPE": {

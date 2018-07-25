@@ -8,7 +8,7 @@ ENV_DIR=$3
 
 MATTERMOST_VERSION="$(cat $ENV_DIR/MATTERMOST_VERSION)"
 MATTERMOST_TYPE="$(cat $ENV_DIR/MATTERMOST_TYPE)"
-MATTERMOST_URL="https://releases.mattermost.com/$MATTERMOST_VERSION/mattermost-$MATTERMOST_TYPE-$MATTERMOST_VERSION-linux-amd64.tar.gz"
+MATTERMOST_URL="https://releases.mattermost.com/$MATTERMOST_VERSION/mattermost-$MATTERMOST_VERSION-linux-amd64.tar.gz"-amd64.tar.gz"
 
 echo "-----> Downloading and unpacking Mattermost"
 curl -s -L "${MATTERMOST_URL}" | tar -zxf - --strip-components=1 -C ${BUILD_DIR}
