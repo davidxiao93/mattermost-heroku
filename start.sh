@@ -14,7 +14,7 @@ trap _term SIGTERM
 ####################
 # Start Mattermost #
 ####################
-bin/platform --config=/app/default-config.json &
+bin/mattermost --config=/app/default-config.json &
 
 PID=$!
 
