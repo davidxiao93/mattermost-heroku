@@ -1,4 +1,3 @@
-# Test to see if 5.1.0 can be done
 
 # Deploy Mattermost Team or Enterprise Edition to Heroku
 
@@ -8,7 +7,17 @@ This buildpack is an [inline buildpack](https://github.com/kr/heroku-buildpack-i
 It must be used in tandem with [This customized Nginx Buildpack](https://github.com/cadecairos/nginx-buildpack) that allow mattermost to communicate with Nginx using a TCP port instead of a socket.
 
 
-### Known to work with Mattermost 4.5.0 Team and Enterprise editions
+### Only tested on 5.1.0 Team edition. Changes made:
+- update the `default-config.json` with the latest version from [their server repo](https://github.com/mattermost/mattermost-server)
+- replace the binary name from `platform` to `mattermost` as they have [changed it](https://docs.mattermost.com/administration/changelog.html) for 5.0.0
+- update the mattermost url in `bin/compile` as they changed the path from 4 to 5
+
+### Setup
+1. Click the Deploy to Heroku button above
+2. Login if needed, give the app a name and click deploy
+3. Go to Manage App, Settings, Reveal Config Vars, and copy the value for `DATABASE_URL`
+4. Set the value `MM_SQLSETTINGS_DATASOURCE` to the copied value
+5. You should be good to go now
 
 ## Configuration options
 

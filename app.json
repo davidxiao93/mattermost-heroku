@@ -99,11 +99,11 @@
         },
         "MM_TEAMSETTINGS_ENABLETEAMCREATION": {
             "description": "",
-            "value": "false"
+            "value": "true"
         },
         "MM_TEAMSETTINGS_ENABLEUSERCREATION": {
             "description": "",
-            "value": "false"
+            "value": "true"
         },
         "MM_EMAILSETTINGS_SMTPUSERNAME": {
             "description": "",
